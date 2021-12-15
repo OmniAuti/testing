@@ -1,0 +1,261 @@
+* {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: 550px;
+  width: 650px;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.card-inner-studio-silence {
+  height: 500px;
+  width: 600px;
+  background-color: #eeebe6;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+/* ----- STUDIO S -------- */
+
+.square {
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  width: 300px;
+  height: 300px;
+  background-color: rgba(202, 13, 0, 0.5);
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotate(45deg) translateZ(100px);
+}
+
+.studio-title {
+  float: left;
+  margin-left: 5%;
+  width: 60%;
+  transform-style: preserve-3d;
+  transform: translateZ(25px);
+}
+
+.silence-title {
+  float: right;
+  margin-right: 5%;
+  width: 70.11%;
+  transform-style: preserve-3d;
+  transform: translateZ(25px);
+}
+
+/* ----- MAD BATTER
+
+.card {
+  height: 550px;
+  width: 650px;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-inner-mad-bat {
+  height: 500px;
+  width: 600px;
+  background-color: #f7f7f7;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: "Shippori Mincho B1", serif;
+}
+
+.hero {
+  background-image: url("hero-1.jpeg");
+  background-position: center left -50px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 35px;
+  width: 95%;
+  height: 70%;
+  z-index: -1;
+  border: 1px solid #000;
+}
+
+.cart {
+  height: 100%;
+  width: 25%;
+  right: 0;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  border-left: 1px solid #000;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: translateZ(5px);
+}
+
+.cart-item {
+  margin: 20px 0px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.65rem;
+  transform-style: preserve-3d;
+  transform: translateZ(25px);
+  padding: 0px 2.5px;
+}
+
+.trash {
+  background-image: url("delete.svg");
+  background-position: center;
+  background-size: cover;
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+}
+
+.order-cont {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.order-cont p {
+    width: 100%;
+  margin-bottom: 0px;
+  text-overflow: ellipsis;
+}
+
+.order-cont h6 {
+    width: 100%;
+  margin-top: 0px;
+  color: #656566;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.header {
+  font-family: "Londrina Outline", cursive;
+  color: #fff;
+  position: absolute;
+  right: calc(25% + 10px);
+  top: 10%;
+  font-size: 2.5rem;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  text-align: right;
+}
+
+.nav {
+  color: #656566;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 18%;
+  right: calc(25% + 10px);
+  width: 40%;
+  font-size: 10px;
+  transform: translateZ(25px);
+}
+
+.nav-hr {
+  position: absolute;
+  bottom: 15.5%;
+  right: calc(25% - 10px);
+  width: 43%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #000;
+  transform: translateZ(0px);
+}
+
+.logo {
+  background-image: url("logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 138px;
+  width: 150px;
+  transform: translateZ(50px);
+  transform-style: preserve-3d;
+}
+
+.logo-cover {
+  height: 160px;
+  width: 145px;
+  border-radius: 30%;
+  position: absolute;
+  top: 5px;
+  border-radius: 20% 20% 0% 0%;
+  background-color: #f7f7f7;
+  transform-style: preserve-3d;
+  transform: translateZ(2px);
+}
+
+.logo-two {
+  height: 90px;
+  width: 150px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 30% 30% 0% 0%;
+  border: 1px solid black;
+  border-bottom: none;
+  left: 20px;
+  bottom: 115px;
+  transform: translateZ(1px);
+  transform-style: preserve-3d;
+}
+
+.logo h5 {
+  color: #f7f7f7;
+  margin: 50px 1.5px 0px 1.5px;
+  font-size: 11px;
+  transform: translateZ(10px);
+  transform-style: preserve-3d;
+  text-shadow: 0px 0px 2px #ba6fb4;
+}
+
+.btn {
+    background-color: #ba6fb4;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%) translateZ(50px);
+    transform-style: preserve-3d;
+}
+
+ -------- */
